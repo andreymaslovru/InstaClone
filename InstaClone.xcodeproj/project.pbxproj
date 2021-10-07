@@ -30,6 +30,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		380CEC74D6E6F90FBE6363AE /* Pods-InstaClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaClone.release.xcconfig"; path = "Target Support Files/Pods-InstaClone/Pods-InstaClone.release.xcconfig"; sourceTree = "<group>"; };
+		8DFD7EEF3B1590AF8E0D8B54 /* Pods-InstaClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaClone.debug.xcconfig"; path = "Target Support Files/Pods-InstaClone/Pods-InstaClone.debug.xcconfig"; sourceTree = "<group>"; };
 		9F0687FF270EED53001D371E /* InstaClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F068802270EED53001D371E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F068804270EED53001D371E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,11 +67,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		68D6F5AAE2D79F45E5CF8AFC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8DFD7EEF3B1590AF8E0D8B54 /* Pods-InstaClone.debug.xcconfig */,
+				380CEC74D6E6F90FBE6363AE /* Pods-InstaClone.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		9F0687F6270EED53001D371E = {
 			isa = PBXGroup;
 			children = (
 				9F068801270EED53001D371E /* InstaClone */,
 				9F068800270EED53001D371E /* Products */,
+				68D6F5AAE2D79F45E5CF8AFC /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -430,6 +442,7 @@
 		};
 		9F068814270EED56001D371E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DFD7EEF3B1590AF8E0D8B54 /* Pods-InstaClone.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -458,6 +471,7 @@
 		};
 		9F068815270EED56001D371E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 380CEC74D6E6F90FBE6363AE /* Pods-InstaClone.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
